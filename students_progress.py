@@ -7,7 +7,8 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
-data = pd.read_csv(r'D:\PROJECT\student_data.csv')
+data = pd.read_csv(r'E:\PROJECT\New folder\student_data.csv')
+
 
 le = LabelEncoder()
 data['Gender'] = le.fit_transform(data['Gender'])  # Male=1, Female=0
